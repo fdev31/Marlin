@@ -27,3 +27,8 @@
 #define BOARD_NAME "Melzi (ATmega1284)"
 #define IS_MELZI
 #include "pins_SANGUINOLOLU_12.h"
+
+#ifdef IS_WANHAO_DI3
+#define BTN_EN1             30
+#define BTN_EN2             29
+#endif
