@@ -462,7 +462,7 @@
 #define BED_MAXTEMP      120
 
 //===========================================================================
-//============================= PID Settings ================================
+//============================= PaaID Settings ================================
 //===========================================================================
 // PID Tuning Guide here: http://reprap.org/wiki/PID_Tuning
 
@@ -484,10 +484,14 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
+#if 0
+
   // Ultimaker
   #define DEFAULT_Kp 22.2
   #define DEFAULT_Ki 1.08
   #define DEFAULT_Kd 114
+
+#endif
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -500,6 +504,10 @@
   //#define DEFAULT_Kd 440
 
 #endif // PIDTEMP
+
+#define DEFAULT_Kp 22.2
+#define DEFAULT_Ki 1.2
+#define DEFAULT_Kd 150
 
 //===========================================================================
 //====================== PID > Bed Temperature Control ======================
